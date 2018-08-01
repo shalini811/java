@@ -14,7 +14,7 @@ public class Descorder {
 	}
 	for( j=0;j<i;j++)
 	{
-		for ( k = i + 1; k<i; k++) 
+		for ( k = j + 1; k<i; k++) 
         {
             if (a[j] < a[k]) 
             {
@@ -24,11 +24,10 @@ public class Descorder {
             }
         }
 	}
-	for ( j = 0; j < i-1; j++) 
+	for ( j = 0; j < i; j++) 
     {
         System.out.print(a[j]);
     }
-	System.out.print(a[i-1]);
         if(a[j]%2==0)
         {
         	sum+=a[j];
