@@ -9,12 +9,11 @@ void trimStr()
 	System.out.println("Enter the Number:");
 	int n=s.nextInt();
 	System.out.print(st);
-	char ch[]=st.toCharArray();
 	for(int i=0;i<n;i++)
 	{
-		for(int j=n;j<ch.length;j++)
+		for(int j=st.length()-n;j<st.length();j++)
 		{
-			System.out.print(ch[j]);
+			System.out.print(st.charAt(j));
 		}
 	}
 }
